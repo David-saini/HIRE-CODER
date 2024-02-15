@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hire Coder</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/js/style.js">
+    <link rel="icon" href="./assets/images/webp/logo.webp">
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <script>
+        tailwind.config = {
+            theme: {
+                container: {
+                    center: true,
+                    padding: {
+                        DEFAULT: "1rem",
+                        // lg: "4.375rem",
+                        // "2xl": "12.375rem",
+
+                    },
+                },
+
+                extend: {
+
+                    fontSize: {
+                        three_xs: "10px",
+                        two_xs: "12px",
+                        xs: "14px",
+                        sm: "16px",
+                        md: "18px",
+                        lg: "20px",
+                        xl: "24px",
+                        two_xl: "48px",
+                    },
+                    colors: {
+                        dark: "#111111",
+                        gray: "#585858",
+                        blue: "#01639E",
+                        red: "#CB372B",
+                        lightblue: "#C7DAE6",
+                        primary_black: "#0F021D",
+                    },
+
+                    background: {
+                        lightgreen: "#098b31",
+                    }
+
+                },
+            },
+        };
+    </script>
+</head>
+
+<body>
+
+    <header
+        class=" bg-[url('/assets/images/webp/header_bg.webp')] bg-no-repeat bg-center bg-cover relative min-h-screen relative">
+        <img class="absolute end-0" src="./assets/images/webp/map_img.webp" alt="map_img">
+        <nav class="relative z-10">
+            <div class="max-w-[1164px] mx-auto px-3">
+                <div class="flex items-center justify-between py-1.5">
+                    <div class="flex items-center justify-between w-full">
+
+                        <img class="max-w-[125.75px] h-[60px]" src="./assets/images/webp/logo.webp" alt="logo">
+
+                        <div class="hidden lg:block">
+                            <div class="flex items-center justify-between gap-[34px]">
+                                <div class="flex">
+                                    <ul class="p-0 m-0 flex gap-6">
+                                        <li><a href="#"
+                                                class="text-white leading-6 ff_inter font-semibold text-sm transition-all duration-300 hover:text-dark">Jobs</a>
+                                        <li><a href="#"
+                                                class="text-white leading-6 ff_inter font-semibold text-sm transition-all duration-300 hover:text-dark">Coders</a>
+                                        </li>
+                                    </ul>
+
+                                </div>
+                                <button
+                                    class="ff_outfit font-semibold text-dark text-sm leading-5 bg-white w-[102px] h-[44px] rounded-[50px] border border-white border-solid hover:bg-transparent transition-all duration-300 hover:text-white">Sign
+                                    In</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <button id="opennav" onclick="opennav()" class="menu text-white lg:hidden items-center flex"
+                        type="button"><img class="max-w-[24px] sm:max-w-[40px] md:max-w-[48px]"
+                            src="./assets/images/webp/humburger.webp" alt=""></button>
+                    <div id="menu"
+                        class="flex justify-center items-center w-full h-full z-50 fixed top-0 left-[-100%] duration-300 ease-linear lg:hidden bg-[#098b31]">
+                        <button onclick="closenav()" type="button"
+                            class="absolute top-[0] right-[2%] closemenu text-white text-[68px]">&times;</button>
+                        <div class="flex-column">
+
+                            <ul class="p-0 m-0 flex items-center justify-center flex-col gap-6">
+                                <li onclick="closenav()"><a href="#"
+                                        class="text-white leading-6 ff_inter font-semibold text-sm transition-all duration-300 hover:text-dark">Jobs</a>
+                                <li onclick="closenav()"><a href="#"
+                                        class="text-white leading-6 ff_inter font-semibold text-sm transition-all duration-300 hover:text-dark">Coders</a>
+                                </li>
+                            </ul>
+
+                            <button onclick="closenav()"
+                                class="ff_outfit font-semibold text-dark text-sm leading-5 bg-white w-[102px] h-[44px] rounded-[50px] border border-white border-solid hover:bg-transparent transition-all duration-300 hover:text-white mt-6">Sign
+                                In</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </nav>
+
+        <div class="max-w-[1164px] mx-auto px-3 relative z-[1]">
+            <p class="text-white mt-12 ff_inter font-normal text-xl leading-8">Coder on demand</p>
+            <h1 class="ff_outfit font-semibold text-two_xl leading-[56px] max-w-[680px] text-white pb-[106px]">Video
+                Chat And Hire Top 1% Remote Coder Same Day </h1>
+            <!-- tabs -->
+            <ul class="tabs">
+                <li class="active"><a href="#tab1">Tab 1</a></li>
+                <li><a href="#tab2">Tab 2</a></li>
+                <li><a href="#tab3">Tab 3</a></li>
+            </ul>
+
+            <div class="tab-content" id="tab1">
+                <div class="border-white border border-solid max-w-[218px] rounded-[10px] bg-white mt-10">
+                    <img class="mx-auto my-2.5 max-w-[203px]" src="./assets/images/webp/man_img_1.webp" alt="man_img_1">
+
+                    <div class="flex flex-col px-2">
+                        <div class="flex items-center justify-between">
+                            <div class="flex flex-col">
+                                <h3 class="ff_inter font-medium text-sm leading-5">Wade Warren</h3>
+                                <p class="ff_inter font-normal text-two_xs leading-[14px] opacity-60">HTML Developer</p>
+                            </div>
+                            <div class="">
+                                <h3 class="ff_inter font-medium text-sm leading-5">$80/hr</h3>
+                                <p class="ff_inter font-normal text-two_xs leading-[14px] opacity-60"><span><img
+                                            class="w-[14px]" src="./assets/images/webp/Star.webp" alt=""></span>4.5</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tab-content" id="tab2" style="display: none;">
+                <h2>Tab 2 Content</h2>
+                <p>This is the content of Tab 2.</p>
+            </div>
+
+            <div class="tab-content" id="tab3" style="display: none;">
+                <h2>Tab 3 Content</h2>
+                <p>This is the content of Tab 3.</p>
+            </div>
+        </div>
+
+
+    </header>
+
+
+    <!-- <footer class=" bg-[url('/assets/images/webp/footer.webp')] bg-no-repeat bg-center bg-cover">
+        <div class="max-w-[1164px] px-3 mx-auto">
+            <div class="flex justify-between">
+
+                <div class="flex flex-col">
+                    <a href="#"><img class="max-w-[149px] h-[71px]" src="./assets/images/webp/logo.webp" alt=""></a>
+                </div>
+
+            </div>
+        </div>
+    </footer> -->
+    <script src="./assets/js/style.js"></script>
+</body>
+
+</html>
