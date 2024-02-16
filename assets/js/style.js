@@ -7,6 +7,10 @@ function closenav() {
     document.getElementsByTagName("body")[0].style.overflow = "scroll";
 }
 
+// year function
+document.getElementById("currentYear").innerText =
+    new Date().getFullYear();
+
 // tabs
 const tabs = document.querySelectorAll('.tabs li a');
 const tabContents = document.querySelectorAll('.tab-content');
@@ -29,4 +33,73 @@ tabs.forEach(tab => {
         document.getElementById(target).style.display = 'block';
     });
 });
-// tabs
+
+// slider_1
+$('.slider_1').slick({
+    infinite: true,
+    dots: false,
+    arrows: false,
+    autoplay: true,
+    speed: 800,
+    slidesToShow: 5,
+    slidesToScroll: 1,
+
+    responsive: [
+        {
+            breakpoint: 1024,
+            settings: {
+                slidesToShow: 3.5,
+                slidesToScroll: 1,
+            }
+        },
+        {
+            breakpoint: 768,
+            settings: {
+                slidesToShow: 3,
+                slidesToScroll: 1,
+            }
+        },
+        {
+            breakpoint: 640,
+            settings: {
+                slidesToShow: 2,
+                slidesToScroll: 1,
+            }
+        },
+    ]
+});
+
+// slider_2
+$('.slider_2').slick({
+    infinite: true,
+    dots: false,
+    arrows: false,
+    autoplay: true,
+    speed: 800,
+    slidesToShow: 7,
+    slidesToScroll: 1,
+
+    responsive: [
+        {
+            breakpoint: 1024,
+            settings: {
+                slidesToShow: 5,
+                slidesToScroll: 1,
+            }
+        },
+        {
+            breakpoint: 768,
+            settings: {
+                slidesToShow: 4,
+                slidesToScroll: 1,
+            }
+        },
+        {
+            breakpoint: 640,
+            settings: {
+                slidesToShow: 3,
+                slidesToScroll: 1,
+            }
+        },
+    ]
+});
