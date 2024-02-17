@@ -62,7 +62,7 @@ $('.slider_1').slick({
         {
             breakpoint: 640,
             settings: {
-                slidesToShow: 2,
+                slidesToShow: 2.05,
                 slidesToScroll: 1,
             }
         },
@@ -103,3 +103,5 @@ $('.slider_2').slick({
         },
     ]
 });
+
+
