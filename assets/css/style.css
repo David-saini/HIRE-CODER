@@ -54,3 +54,7 @@ html {
         background: url(/assets/images/webp/mobil_screen.webp);
     }
 }
+
+.tab button.active {
+    color: #14A800;
+}
