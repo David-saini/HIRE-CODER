@@ -11,28 +11,20 @@ function closenav() {
 document.getElementById("currentYear").innerText =
     new Date().getFullYear();
 
-// tabs
-const tabs = document.querySelectorAll('.tabs li a');
-const tabContents = document.querySelectorAll('.tab-content');
-
-tabs.forEach(tab => {
-    tab.addEventListener('click', function (event) {
-        event.preventDefault();
-
-        // Remove 'active' class from all tabs
-        tabs.forEach(tab => tab.parentNode.classList.remove('active'));
-
-        // Hide all tab contents
-        tabContents.forEach(content => content.style.display = 'none');
-
-        // Add 'active' class to clicked tab
-        this.parentNode.classList.add('active');
-
-        // Display corresponding tab content
-        const target = this.getAttribute('href').substring(1);
-        document.getElementById(target).style.display = 'block';
-    });
-});
+// tabs1
+function languageName(evt, coders) {
+    var i, cardcontent, tabBtns;
+    cardcontent = document.getElementsByClassName("cardcontent");
+    for (i = 0; i < cardcontent.length; i++) {
+        cardcontent[i].style.display = "none";
+    }
+    tabBtns = document.getElementsByClassName("tabBtns");
+    for (i = 0; i < tabBtns.length; i++) {
+        tabBtns[i].classList.remove("active");
+    }
+    document.getElementById(coders).style.display = "block";
+    evt.currentTarget.classList.add("active");
+}
 
 // slider_1
 $('.slider_1').slick({
@@ -104,26 +96,6 @@ $('.slider_2').slick({
     ]
 });
 
-// show or hide function
-const showBtn = document.querySelector(".show_btn");
-const hideBtn = document.querySelector(".hide_btn");
-const experienceContent = document.querySelector(".experience_content");
-
-showBtn.addEventListener("click", function () {
-    experienceContent.style.display = "block";
-    showBtn.style.display = "none";
-    hideBtn.style.display = "inline-block";
-});
-
-hideBtn.addEventListener("click", function () {
-    experienceContent.style.display = "none";
-    hideBtn.style.display = "none";
-    showBtn.style.display = "inline-block";
-});
-
-hideBtn.style.display = "none";
-
-
 // work tab
 document.getElementById('London').style.display = "block";
 document.querySelector('.tablinks.active').classList.remove('active');
@@ -142,3 +114,26 @@ function openCity(evt, cityName) {
     document.getElementById(cityName).style.display = "block";
     evt.currentTarget.className += " active";
 }
+
+document.getElementById('London').style.display = "block";
+document.querySelector('.tablinks.active').classList.remove('active');
+document.querySelector('.tablinks:first-child').classList.add('active');
+
+// swipper
+var swiper = new Swiper(".mySwiper", {
+    spaceBetween: 30,
+    infinite: true,
+    centeredSlides: true,
+    autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
+    },
+    pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+    },
+    navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+    },
+});

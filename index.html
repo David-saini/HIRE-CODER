@@ -13,9 +13,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"
         integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"
-        integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 
     <script>
         tailwind.config = {
@@ -58,7 +57,7 @@
 
     <header class="header_bg bg-no-repeat xl:min-h-screen bg-center bg-cover overflow-hidden">
         <!-- nav -->
-        <nav class="relative z-10">
+        <nav class="relative z-100">
             <div class="max-w-[1164px] mx-auto px-3">
                 <div class="flex items-center justify-between py-1.5">
                     <div class="flex items-center justify-between w-full">
@@ -120,33 +119,28 @@
                 Video Chat And Hire Top 1% Remote Coder Same Day </h1>
 
             <!--------------------- tabs ------------------->
-            <ul class="gap-2.5 tabs flex flex-wrap">
-                <li class="active mb-2.5 sm:mb-0"><a href="#tab1"
-                        class="bg-transparent border border-solid border-white text-white rounded-[50px] ff_inter font-normal text-two_xs md:text-xs leading-4 py-2 px-4">Website
-                        Design</a></li>
-                <li class="mb-2.5 sm:mb-0"><a href="#tab2"
-                        class="bg-transparent border border-solid border-white text-white py-2 px-4 rounded-[50px] ff_inter font-normal text-two_xs md:text-xs leading-4">Java
-                        Script</a>
-                </li>
-                <li class=" mb-2.5 sm:mb-0"><a href="#tab3"
-                        class="bg-transparent border border-solid border-white text-white py-2 px-4 rounded-[50px] ff_inter font-normal text-two_xs md:text-xs leading-4">UI
-                        Design</a>
-                </li>
-
-                <li><a href="#tab4"
-                        class="bg-transparent border border-solid border-white text-white py-2 px-4 rounded-[50px] ff_inter font-normal text-two_xs md:text-xs leading-4">HTML</a>
-                </li>
-
-                <li><a href="#tab5"
-                        class="bg-transparent border border-solid border-white text-white py-2 px-4 rounded-[50px] ff_inter font-normal text-two_xs md:text-xs leading-4">Bootstrap</a>
-                </li>
-
-                <li><a href="#tab6"
-                        class="bg-transparent border border-solid border-white text-white py-2 px-4 rounded-[50px] ff_inter font-normal text-two_xs md:text-xs leading-4">CSS</a>
-                </li>
-            </ul>
-
-            <div class="tab-content" id="tab1">
+            <div class="flex flex-wrap gap-2.5 overflow-hidden tabs">
+                <button
+                    class="bg-transparent border border-solid border-white text-white rounded-[50px] ff_inter font-normal text-two_xs md:text-xs leading-4 py-2 px-4 active"
+                    onclick="languageName(event, 'desginer')">Website Design</button>
+                <button
+                    class="bg-transparent border border-solid border-white text-white rounded-[50px] ff_inter font-normal text-two_xs md:text-xs leading-4 py-2 px-4"
+                    onclick="languageName(event, 'js')">Java Script</button>
+                <button
+                    class="bg-transparent border border-solid border-white text-white rounded-[50px] ff_inter font-normal text-two_xs md:text-xs leading-4 py-2 px-4"
+                    onclick="languageName(event, 'desiger2')">UI Design</button>
+                <button
+                    class="bg-transparent border border-solid border-white text-white rounded-[50px] ff_inter font-normal text-two_xs md:text-xs leading-4 py-2 px-4"
+                    onclick="languageName(event, 'html')">HTML</button>
+                <button
+                    class="bg-transparent border border-solid border-white text-white rounded-[50px] ff_inter font-normal text-two_xs md:text-xs leading-4 py-2 px-4"
+                    onclick="languageName(event, 'bootstrap')">Bootstrap</button>
+                <button
+                    class="bg-transparent border border-solid border-white text-white rounded-[50px] ff_inter font-normal text-two_xs md:text-xs leading-4 py-2 px-4"
+                    onclick="languageName(event, 'css')">CSS</button>
+            </div>
+            <!-- Website Design -->
+            <div class="cardcontent block" id="desginer">
                 <div class="flex items-center slider_1">
 
                     <div
@@ -443,9 +437,306 @@
                 </div>
             </div>
 
-            <div class="tab-content" id="tab2" style="display: none;">
+            <!-- Java Script -->
+            <div class="cardcontent hidden" id="js">
                 <div class="flex items-center slider_1">
 
+                    <div
+                        class="border-white border border-solid w-[165px] md:w-[218px] rounded-[10px] bg-white mt-10 pt-2.5 px-2 box_shadow swiper-slide">
+                        <img class="h-[75px] w-[203px] sm:h-[125px]" src="./assets/images/webp/developer_img_1.webp"
+                            alt="developer_img_1">
+                        <div class="flex flex-col">
+                            <div class="flex items-center justify-between pt-2 md:pt-2.5">
+                                <div class="flex flex-col">
+                                    <h3 class="ff_inter font-medium text-two_xs md:text-sm leading-[150%]">Wade Warren
+                                    </h3>
+                                    <p
+                                        class="ff_inter font-normal text-three_xs md:text-two_xs leading-[14px] opacity-60">
+                                        HTML Developer
+                                    </p>
+                                </div>
+
+                                <div class="flex flex-col">
+                                    <h3 class="ff_inter font-medium text-two_xs md:text-sm leading-[150%]">$80/hr</h3>
+                                    <div class="flex justify-end">
+                                        <img class="w-[10px] sm:w-[14px]" src="./assets/images/webp/Star.webp"
+                                            alt="Star">
+                                        <p class="ff_inter font-normal text-two_xs leading-[14px] opacity-60 mb-0 ps-1">
+                                            4.5
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="pt-2.5 flex gap-1.5 mb-4">
+                                <div
+                                    class="border border-solid border-[#e6e6e6] bg-white py-0.5 px-1.5 md:py-1 md:px-2.5 rounded-[50px]">
+                                    <p class="ff_inter font-medium leading-3 text-three_xs text-black opacity-70">
+                                        HTML
+                                    </p>
+                                </div>
+
+                                <div
+                                    class="border border-solid border-[#e6e6e6] bg-white py-0.5 px-1.5 md:py-1 md:px-2.5 rounded-[50px]">
+                                    <p class="ff_inter font-medium leading-3 text-three_xs text-black opacity-70">
+                                        Bootstrap
+                                    </p>
+                                </div>
+
+                                <div
+                                    class="border border-solid border-[#e6e6e6] bg-white  py-0.5 px-1.5 md:py-1 md:px-2.5 rounded-[50px]">
+                                    <p class="ff_inter font-medium leading-3 text-three_xs text-black opacity-70">
+                                        CSS
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="max-w-[107px] h-[33px] mb-1.5">
+                                <button
+                                    class="ff_inter font-semibold text-two_xs md:text-xs text-white py-1.5 px-5 leading-[150%] rounded-[40px] bg-[#14a800]">Chat
+                                    Now</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div
+                        class="border-white border border-solid w-[165px] md:w-[218px] rounded-[10px] bg-white mt-10 pt-2.5 px-2 box_shadow swiper-slide">
+                        <img class="h-[75px] w-[203px] sm:h-[125px]" src="./assets/images/webp/developer_img_1.webp"
+                            alt="developer_img_1">
+                        <div class="flex flex-col">
+                            <div class="flex items-center justify-between pt-2 md:pt-2.5">
+                                <div class="flex flex-col">
+                                    <h3 class="ff_inter font-medium text-two_xs md:text-sm leading-[150%]">Wade Warren
+                                    </h3>
+                                    <p
+                                        class="ff_inter font-normal text-three_xs md:text-two_xs leading-[14px] opacity-60">
+                                        HTML Developer
+                                    </p>
+                                </div>
+
+                                <div class="flex flex-col">
+                                    <h3 class="ff_inter font-medium text-two_xs md:text-sm leading-[150%]">$80/hr</h3>
+                                    <div class="flex justify-end">
+                                        <img class="w-[10px] sm:w-[14px]" src="./assets/images/webp/Star.webp"
+                                            alt="Star">
+                                        <p class="ff_inter font-normal text-two_xs leading-[14px] opacity-60 mb-0 ps-1">
+                                            4.5
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="pt-2.5 flex gap-1.5 mb-4">
+                                <div
+                                    class="border border-solid border-[#e6e6e6] bg-white py-0.5 px-1.5 md:py-1 md:px-2.5 rounded-[50px]">
+                                    <p class="ff_inter font-medium leading-3 text-three_xs text-black opacity-70">
+                                        HTML
+                                    </p>
+                                </div>
+
+                                <div
+                                    class="border border-solid border-[#e6e6e6] bg-white py-0.5 px-1.5 md:py-1 md:px-2.5 rounded-[50px]">
+                                    <p class="ff_inter font-medium leading-3 text-three_xs text-black opacity-70">
+                                        Bootstrap
+                                    </p>
+                                </div>
+
+                                <div
+                                    class="border border-solid border-[#e6e6e6] bg-white  py-0.5 px-1.5 md:py-1 md:px-2.5 rounded-[50px]">
+                                    <p class="ff_inter font-medium leading-3 text-three_xs text-black opacity-70">
+                                        CSS
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="max-w-[107px] h-[33px] mb-1.5">
+                                <button
+                                    class="ff_inter font-semibold text-two_xs md:text-xs text-white py-1.5 px-5 leading-[150%] rounded-[40px] bg-[#14a800]">Chat
+                                    Now</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div
+                        class="border-white border border-solid w-[165px] md:w-[218px] rounded-[10px] bg-white mt-10 pt-2.5 px-2 box_shadow swiper-slide">
+                        <img class="h-[75px] w-[203px] sm:h-[125px]" src="./assets/images/webp/developer_img_1.webp"
+                            alt="developer_img_1">
+                        <div class="flex flex-col">
+                            <div class="flex items-center justify-between pt-2 md:pt-2.5">
+                                <div class="flex flex-col">
+                                    <h3 class="ff_inter font-medium text-two_xs md:text-sm leading-[150%]">Wade Warren
+                                    </h3>
+                                    <p
+                                        class="ff_inter font-normal text-three_xs md:text-two_xs leading-[14px] opacity-60">
+                                        HTML Developer
+                                    </p>
+                                </div>
+
+                                <div class="flex flex-col">
+                                    <h3 class="ff_inter font-medium text-two_xs md:text-sm leading-[150%]">$80/hr</h3>
+                                    <div class="flex justify-end">
+                                        <img class="w-[10px] sm:w-[14px]" src="./assets/images/webp/Star.webp"
+                                            alt="Star">
+                                        <p class="ff_inter font-normal text-two_xs leading-[14px] opacity-60 mb-0 ps-1">
+                                            4.5
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="pt-2.5 flex gap-1.5 mb-4">
+                                <div
+                                    class="border border-solid border-[#e6e6e6] bg-white py-0.5 px-1.5 md:py-1 md:px-2.5 rounded-[50px]">
+                                    <p class="ff_inter font-medium leading-3 text-three_xs text-black opacity-70">
+                                        HTML
+                                    </p>
+                                </div>
+
+                                <div
+                                    class="border border-solid border-[#e6e6e6] bg-white py-0.5 px-1.5 md:py-1 md:px-2.5 rounded-[50px]">
+                                    <p class="ff_inter font-medium leading-3 text-three_xs text-black opacity-70">
+                                        Bootstrap
+                                    </p>
+                                </div>
+
+                                <div
+                                    class="border border-solid border-[#e6e6e6] bg-white  py-0.5 px-1.5 md:py-1 md:px-2.5 rounded-[50px]">
+                                    <p class="ff_inter font-medium leading-3 text-three_xs text-black opacity-70">
+                                        CSS
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="max-w-[107px] h-[33px] mb-1.5">
+                                <button
+                                    class="ff_inter font-semibold text-two_xs md:text-xs text-white py-1.5 px-5 leading-[150%] rounded-[40px] bg-[#14a800]">Chat
+                                    Now</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div
+                        class="border-white border border-solid w-[165px] md:w-[218px] rounded-[10px] bg-white mt-10 pt-2.5 px-2 box_shadow swiper-slide">
+                        <img class="h-[75px] w-[203px] sm:h-[125px]" src="./assets/images/webp/developer_img_1.webp"
+                            alt="developer_img_1">
+                        <div class="flex flex-col">
+                            <div class="flex items-center justify-between pt-2 md:pt-2.5">
+                                <div class="flex flex-col">
+                                    <h3 class="ff_inter font-medium text-two_xs md:text-sm leading-[150%]">Wade Warren
+                                    </h3>
+                                    <p
+                                        class="ff_inter font-normal text-three_xs md:text-two_xs leading-[14px] opacity-60">
+                                        HTML Developer
+                                    </p>
+                                </div>
+
+                                <div class="flex flex-col">
+                                    <h3 class="ff_inter font-medium text-two_xs md:text-sm leading-[150%]">$80/hr</h3>
+                                    <div class="flex justify-end">
+                                        <img class="w-[10px] sm:w-[14px]" src="./assets/images/webp/Star.webp"
+                                            alt="Star">
+                                        <p class="ff_inter font-normal text-two_xs leading-[14px] opacity-60 mb-0 ps-1">
+                                            4.5
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="pt-2.5 flex gap-1.5 mb-4">
+                                <div
+                                    class="border border-solid border-[#e6e6e6] bg-white py-0.5 px-1.5 md:py-1 md:px-2.5 rounded-[50px]">
+                                    <p class="ff_inter font-medium leading-3 text-three_xs text-black opacity-70">
+                                        HTML
+                                    </p>
+                                </div>
+
+                                <div
+                                    class="border border-solid border-[#e6e6e6] bg-white py-0.5 px-1.5 md:py-1 md:px-2.5 rounded-[50px]">
+                                    <p class="ff_inter font-medium leading-3 text-three_xs text-black opacity-70">
+                                        Bootstrap
+                                    </p>
+                                </div>
+
+                                <div
+                                    class="border border-solid border-[#e6e6e6] bg-white  py-0.5 px-1.5 md:py-1 md:px-2.5 rounded-[50px]">
+                                    <p class="ff_inter font-medium leading-3 text-three_xs text-black opacity-70">
+                                        CSS
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="max-w-[107px] h-[33px] mb-1.5">
+                                <button
+                                    class="ff_inter font-semibold text-two_xs md:text-xs text-white py-1.5 px-5 leading-[150%] rounded-[40px] bg-[#14a800]">Chat
+                                    Now</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div
+                        class="border-white border border-solid w-[165px] md:w-[218px] rounded-[10px] bg-white mt-10 pt-2.5 px-2 box_shadow swiper-slide">
+                        <img class="h-[75px] w-[203px] sm:h-[125px]" src="./assets/images/webp/developer_img_1.webp"
+                            alt="developer_img_1">
+                        <div class="flex flex-col">
+                            <div class="flex items-center justify-between pt-2 md:pt-2.5">
+                                <div class="flex flex-col">
+                                    <h3 class="ff_inter font-medium text-two_xs md:text-sm leading-[150%]">Wade Warren
+                                    </h3>
+                                    <p
+                                        class="ff_inter font-normal text-three_xs md:text-two_xs leading-[14px] opacity-60">
+                                        HTML Developer
+                                    </p>
+                                </div>
+
+                                <div class="flex flex-col">
+                                    <h3 class="ff_inter font-medium text-two_xs md:text-sm leading-[150%]">$80/hr</h3>
+                                    <div class="flex justify-end">
+                                        <img class="w-[10px] sm:w-[14px]" src="./assets/images/webp/Star.webp"
+                                            alt="Star">
+                                        <p class="ff_inter font-normal text-two_xs leading-[14px] opacity-60 mb-0 ps-1">
+                                            4.5
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="pt-2.5 flex gap-1.5 mb-4">
+                                <div
+                                    class="border border-solid border-[#e6e6e6] bg-white py-0.5 px-1.5 md:py-1 md:px-2.5 rounded-[50px]">
+                                    <p class="ff_inter font-medium leading-3 text-three_xs text-black opacity-70">
+                                        HTML
+                                    </p>
+                                </div>
+
+                                <div
+                                    class="border border-solid border-[#e6e6e6] bg-white py-0.5 px-1.5 md:py-1 md:px-2.5 rounded-[50px]">
+                                    <p class="ff_inter font-medium leading-3 text-three_xs text-black opacity-70">
+                                        Bootstrap
+                                    </p>
+                                </div>
+
+                                <div
+                                    class="border border-solid border-[#e6e6e6] bg-white  py-0.5 px-1.5 md:py-1 md:px-2.5 rounded-[50px]">
+                                    <p class="ff_inter font-medium leading-3 text-three_xs text-black opacity-70">
+                                        CSS
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="max-w-[107px] h-[33px] mb-1.5">
+                                <button
+                                    class="ff_inter font-semibold text-two_xs md:text-xs text-white py-1.5 px-5 leading-[150%] rounded-[40px] bg-[#14a800]">Chat
+                                    Now</button>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+            <!-- UI Design -->
+            <div class="cardcontent hidden" id="desiger2">
+                <div class="flex items-center">
                     <div
                         class="border-white border border-solid w-[165px] md:w-[218px] rounded-[10px] bg-white mt-10 pt-2.5 px-2 box_shadow">
                         <img class="h-[75px] w-[203px] sm:h-[125px]" src="./assets/images/webp/developer_img_1.webp"
@@ -739,9 +1030,304 @@
 
                 </div>
             </div>
+            <!-- HTML -->
+            <div class="cardcontent hidden" id="html">
+                <div class="flex items-center">
+                    <div
+                        class="border-white border border-solid w-[165px] md:w-[218px] rounded-[10px] bg-white mt-10 pt-2.5 px-2 box_shadow">
+                        <img class="h-[75px] w-[151px] md:w-[203px] md:h-[125px]"
+                            src="./assets/images/webp/developer_img_1.webp" alt="developer_img_1">
+                        <div class="flex flex-col">
+                            <div class="flex items-center justify-between pt-2 md:pt-2.5">
+                                <div class="flex flex-col">
+                                    <h3 class="ff_inter font-medium text-two_xs md:text-sm leading-[150%]">Wade Warren
+                                    </h3>
+                                    <p
+                                        class="ff_inter font-normal text-three_xs md:text-two_xs leading-[14px] opacity-60">
+                                        HTML Developer
+                                    </p>
+                                </div>
 
-            <div class="tab-content" id="tab3" style="display: none;">
-                <div class="flex items-center slider_1">
+                                <div class="flex flex-col">
+                                    <h3 class="ff_inter font-medium text-two_xs md:text-sm leading-[150%]">$80/hr</h3>
+                                    <div class="flex justify-end">
+                                        <img class="w-[10px] sm:w-[14px]" src="./assets/images/webp/Star.webp"
+                                            alt="Star">
+                                        <p class="ff_inter font-normal text-two_xs leading-[14px] opacity-60 mb-0 ps-1">
+                                            4.5
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="pt-2.5 flex gap-1.5 mb-4">
+                                <div
+                                    class="border border-solid border-[#e6e6e6] bg-white py-0.5 px-1.5 md:py-1 md:px-2.5 rounded-[50px]">
+                                    <p class="ff_inter font-medium leading-3 text-three_xs text-black opacity-70">
+                                        HTML
+                                    </p>
+                                </div>
+
+                                <div
+                                    class="border border-solid border-[#e6e6e6] bg-white py-0.5 px-1.5 md:py-1 md:px-2.5 rounded-[50px]">
+                                    <p class="ff_inter font-medium leading-3 text-three_xs text-black opacity-70">
+                                        Bootstrap
+                                    </p>
+                                </div>
+
+                                <div
+                                    class="border border-solid border-[#e6e6e6] bg-white  py-0.5 px-1.5 md:py-1 md:px-2.5 rounded-[50px]">
+                                    <p class="ff_inter font-medium leading-3 text-three_xs text-black opacity-70">
+                                        CSS
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="max-w-[107px] h-[33px] mb-1.5">
+                                <button
+                                    class="ff_inter font-semibold text-two_xs md:text-xs text-white py-1.5 px-5 leading-[150%] rounded-[40px] bg-[#14a800]">Chat
+                                    Now</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div
+                        class="border-white border border-solid w-[165px] md:w-[218px] rounded-[10px] bg-white mt-10 pt-2.5 px-2 box_shadow">
+                        <img class="h-[75px] w-[151px] md:w-[203px] md:h-[125px]"
+                            src="./assets/images/webp/developer_img_1.webp" alt="developer_img_1">
+                        <div class="flex flex-col">
+                            <div class="flex items-center justify-between pt-2 md:pt-2.5">
+                                <div class="flex flex-col">
+                                    <h3 class="ff_inter font-medium text-two_xs md:text-sm leading-[150%]">Wade Warren
+                                    </h3>
+                                    <p
+                                        class="ff_inter font-normal text-three_xs md:text-two_xs leading-[14px] opacity-60">
+                                        HTML Developer
+                                    </p>
+                                </div>
+
+                                <div class="flex flex-col">
+                                    <h3 class="ff_inter font-medium text-two_xs md:text-sm leading-[150%]">$80/hr</h3>
+                                    <div class="flex justify-end">
+                                        <img class="w-[10px] sm:w-[14px]" src="./assets/images/webp/Star.webp"
+                                            alt="Star">
+                                        <p class="ff_inter font-normal text-two_xs leading-[14px] opacity-60 mb-0 ps-1">
+                                            4.5
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="pt-2.5 flex gap-1.5 mb-4">
+                                <div
+                                    class="border border-solid border-[#e6e6e6] bg-white py-0.5 px-1.5 md:py-1 md:px-2.5 rounded-[50px]">
+                                    <p class="ff_inter font-medium leading-3 text-three_xs text-black opacity-70">
+                                        HTML
+                                    </p>
+                                </div>
+
+                                <div
+                                    class="border border-solid border-[#e6e6e6] bg-white py-0.5 px-1.5 md:py-1 md:px-2.5 rounded-[50px]">
+                                    <p class="ff_inter font-medium leading-3 text-three_xs text-black opacity-70">
+                                        Bootstrap
+                                    </p>
+                                </div>
+
+                                <div
+                                    class="border border-solid border-[#e6e6e6] bg-white  py-0.5 px-1.5 md:py-1 md:px-2.5 rounded-[50px]">
+                                    <p class="ff_inter font-medium leading-3 text-three_xs text-black opacity-70">
+                                        CSS
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="max-w-[107px] h-[33px] mb-1.5">
+                                <button
+                                    class="ff_inter font-semibold text-two_xs md:text-xs text-white py-1.5 px-5 leading-[150%] rounded-[40px] bg-[#14a800]">Chat
+                                    Now</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div
+                        class="border-white border border-solid w-[165px] md:w-[218px] rounded-[10px] bg-white mt-10 pt-2.5 px-2 box_shadow">
+                        <img class="h-[75px] w-[151px] md:w-[203px] md:h-[125px]"
+                            src="./assets/images/webp/developer_img_1.webp" alt="developer_img_1">
+                        <div class="flex flex-col">
+                            <div class="flex items-center justify-between pt-2 md:pt-2.5">
+                                <div class="flex flex-col">
+                                    <h3 class="ff_inter font-medium text-two_xs md:text-sm leading-[150%]">Wade Warren
+                                    </h3>
+                                    <p
+                                        class="ff_inter font-normal text-three_xs md:text-two_xs leading-[14px] opacity-60">
+                                        HTML Developer
+                                    </p>
+                                </div>
+
+                                <div class="flex flex-col">
+                                    <h3 class="ff_inter font-medium text-two_xs md:text-sm leading-[150%]">$80/hr</h3>
+                                    <div class="flex justify-end">
+                                        <img class="w-[10px] sm:w-[14px]" src="./assets/images/webp/Star.webp"
+                                            alt="Star">
+                                        <p class="ff_inter font-normal text-two_xs leading-[14px] opacity-60 mb-0 ps-1">
+                                            4.5
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="pt-2.5 flex gap-1.5 mb-4">
+                                <div
+                                    class="border border-solid border-[#e6e6e6] bg-white py-0.5 px-1.5 md:py-1 md:px-2.5 rounded-[50px]">
+                                    <p class="ff_inter font-medium leading-3 text-three_xs text-black opacity-70">
+                                        HTML
+                                    </p>
+                                </div>
+
+                                <div
+                                    class="border border-solid border-[#e6e6e6] bg-white py-0.5 px-1.5 md:py-1 md:px-2.5 rounded-[50px]">
+                                    <p class="ff_inter font-medium leading-3 text-three_xs text-black opacity-70">
+                                        Bootstrap
+                                    </p>
+                                </div>
+
+                                <div
+                                    class="border border-solid border-[#e6e6e6] bg-white  py-0.5 px-1.5 md:py-1 md:px-2.5 rounded-[50px]">
+                                    <p class="ff_inter font-medium leading-3 text-three_xs text-black opacity-70">
+                                        CSS
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="max-w-[107px] h-[33px] mb-1.5">
+                                <button
+                                    class="ff_inter font-semibold text-two_xs md:text-xs text-white py-1.5 px-5 leading-[150%] rounded-[40px] bg-[#14a800]">Chat
+                                    Now</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div
+                        class="border-white border border-solid w-[165px] md:w-[218px] rounded-[10px] bg-white mt-10 pt-2.5 px-2 box_shadow">
+                        <img class="h-[75px] w-[151px] md:w-[203px] md:h-[125px]"
+                            src="./assets/images/webp/developer_img_1.webp" alt="developer_img_1">
+                        <div class="flex flex-col">
+                            <div class="flex items-center justify-between pt-2 md:pt-2.5">
+                                <div class="flex flex-col">
+                                    <h3 class="ff_inter font-medium text-two_xs md:text-sm leading-[150%]">Wade Warren
+                                    </h3>
+                                    <p
+                                        class="ff_inter font-normal text-three_xs md:text-two_xs leading-[14px] opacity-60">
+                                        HTML Developer
+                                    </p>
+                                </div>
+
+                                <div class="flex flex-col">
+                                    <h3 class="ff_inter font-medium text-two_xs md:text-sm leading-[150%]">$80/hr</h3>
+                                    <div class="flex justify-end">
+                                        <img class="w-[10px] sm:w-[14px]" src="./assets/images/webp/Star.webp"
+                                            alt="Star">
+                                        <p class="ff_inter font-normal text-two_xs leading-[14px] opacity-60 mb-0 ps-1">
+                                            4.5
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="pt-2.5 flex gap-1.5 mb-4">
+                                <div
+                                    class="border border-solid border-[#e6e6e6] bg-white py-0.5 px-1.5 md:py-1 md:px-2.5 rounded-[50px]">
+                                    <p class="ff_inter font-medium leading-3 text-three_xs text-black opacity-70">
+                                        HTML
+                                    </p>
+                                </div>
+
+                                <div
+                                    class="border border-solid border-[#e6e6e6] bg-white py-0.5 px-1.5 md:py-1 md:px-2.5 rounded-[50px]">
+                                    <p class="ff_inter font-medium leading-3 text-three_xs text-black opacity-70">
+                                        Bootstrap
+                                    </p>
+                                </div>
+
+                                <div
+                                    class="border border-solid border-[#e6e6e6] bg-white  py-0.5 px-1.5 md:py-1 md:px-2.5 rounded-[50px]">
+                                    <p class="ff_inter font-medium leading-3 text-three_xs text-black opacity-70">
+                                        CSS
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="max-w-[107px] h-[33px] mb-1.5">
+                                <button
+                                    class="ff_inter font-semibold text-two_xs md:text-xs text-white py-1.5 px-5 leading-[150%] rounded-[40px] bg-[#14a800]">Chat
+                                    Now</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div
+                        class="border-white border border-solid w-[165px] md:w-[218px] rounded-[10px] bg-white mt-10 pt-2.5 px-2 box_shadow">
+                        <img class="h-[75px] w-[151px] md:w-[203px] md:h-[125px]"
+                            src="./assets/images/webp/developer_img_1.webp" alt="developer_img_1">
+                        <div class="flex flex-col">
+                            <div class="flex items-center justify-between pt-2 md:pt-2.5">
+                                <div class="flex flex-col">
+                                    <h3 class="ff_inter font-medium text-two_xs md:text-sm leading-[150%]">Wade Warren
+                                    </h3>
+                                    <p
+                                        class="ff_inter font-normal text-three_xs md:text-two_xs leading-[14px] opacity-60">
+                                        HTML Developer
+                                    </p>
+                                </div>
+
+                                <div class="flex flex-col">
+                                    <h3 class="ff_inter font-medium text-two_xs md:text-sm leading-[150%]">$80/hr</h3>
+                                    <div class="flex justify-end">
+                                        <img class="w-[10px] sm:w-[14px]" src="./assets/images/webp/Star.webp"
+                                            alt="Star">
+                                        <p class="ff_inter font-normal text-two_xs leading-[14px] opacity-60 mb-0 ps-1">
+                                            4.5
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="pt-2.5 flex gap-1.5 mb-4">
+                                <div
+                                    class="border border-solid border-[#e6e6e6] bg-white py-0.5 px-1.5 md:py-1 md:px-2.5 rounded-[50px]">
+                                    <p class="ff_inter font-medium leading-3 text-three_xs text-black opacity-70">
+                                        HTML
+                                    </p>
+                                </div>
+
+                                <div
+                                    class="border border-solid border-[#e6e6e6] bg-white py-0.5 px-1.5 md:py-1 md:px-2.5 rounded-[50px]">
+                                    <p class="ff_inter font-medium leading-3 text-three_xs text-black opacity-70">
+                                        Bootstrap
+                                    </p>
+                                </div>
+
+                                <div
+                                    class="border border-solid border-[#e6e6e6] bg-white  py-0.5 px-1.5 md:py-1 md:px-2.5 rounded-[50px]">
+                                    <p class="ff_inter font-medium leading-3 text-three_xs text-black opacity-70">
+                                        CSS
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="max-w-[107px] h-[33px] mb-1.5">
+                                <button
+                                    class="ff_inter font-semibold text-two_xs md:text-xs text-white py-1.5 px-5 leading-[150%] rounded-[40px] bg-[#14a800]">Chat
+                                    Now</button>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <!-- Bootstrap -->
+            <div class="cardcontent hidden" id="bootstrap">
+                <div class="flex items-center">
 
                     <div
                         class="border-white border border-solid w-[165px] md:w-[218px] rounded-[10px] bg-white mt-10 pt-2.5 px-2 box_shadow">
@@ -1035,305 +1621,9 @@
 
                 </div>
             </div>
-
-            <div class="tab-content" id="tab4" style="display: none;">
-                <div class="flex items-center slider_1">
-
-                    <div
-                        class="border-white border border-solid w-[165px] md:w-[218px] rounded-[10px] bg-white mt-10 pt-2.5 px-2 box_shadow">
-                        <img class="h-[75px] w-[151px] md:w-[203px] md:h-[125px]"
-                            src="./assets/images/webp/developer_img_1.webp" alt="developer_img_1">
-                        <div class="flex flex-col">
-                            <div class="flex items-center justify-between pt-2 md:pt-2.5">
-                                <div class="flex flex-col">
-                                    <h3 class="ff_inter font-medium text-two_xs md:text-sm leading-[150%]">Wade Warren
-                                    </h3>
-                                    <p
-                                        class="ff_inter font-normal text-three_xs md:text-two_xs leading-[14px] opacity-60">
-                                        HTML Developer
-                                    </p>
-                                </div>
-
-                                <div class="flex flex-col">
-                                    <h3 class="ff_inter font-medium text-two_xs md:text-sm leading-[150%]">$80/hr</h3>
-                                    <div class="flex justify-end">
-                                        <img class="w-[10px] sm:w-[14px]" src="./assets/images/webp/Star.webp"
-                                            alt="Star">
-                                        <p class="ff_inter font-normal text-two_xs leading-[14px] opacity-60 mb-0 ps-1">
-                                            4.5
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="pt-2.5 flex gap-1.5 mb-4">
-                                <div
-                                    class="border border-solid border-[#e6e6e6] bg-white py-0.5 px-1.5 md:py-1 md:px-2.5 rounded-[50px]">
-                                    <p class="ff_inter font-medium leading-3 text-three_xs text-black opacity-70">
-                                        HTML
-                                    </p>
-                                </div>
-
-                                <div
-                                    class="border border-solid border-[#e6e6e6] bg-white py-0.5 px-1.5 md:py-1 md:px-2.5 rounded-[50px]">
-                                    <p class="ff_inter font-medium leading-3 text-three_xs text-black opacity-70">
-                                        Bootstrap
-                                    </p>
-                                </div>
-
-                                <div
-                                    class="border border-solid border-[#e6e6e6] bg-white  py-0.5 px-1.5 md:py-1 md:px-2.5 rounded-[50px]">
-                                    <p class="ff_inter font-medium leading-3 text-three_xs text-black opacity-70">
-                                        CSS
-                                    </p>
-                                </div>
-                            </div>
-
-                            <div class="max-w-[107px] h-[33px] mb-1.5">
-                                <button
-                                    class="ff_inter font-semibold text-two_xs md:text-xs text-white py-1.5 px-5 leading-[150%] rounded-[40px] bg-[#14a800]">Chat
-                                    Now</button>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div
-                        class="border-white border border-solid w-[165px] md:w-[218px] rounded-[10px] bg-white mt-10 pt-2.5 px-2 box_shadow">
-                        <img class="h-[75px] w-[151px] md:w-[203px] md:h-[125px]"
-                            src="./assets/images/webp/developer_img_1.webp" alt="developer_img_1">
-                        <div class="flex flex-col">
-                            <div class="flex items-center justify-between pt-2 md:pt-2.5">
-                                <div class="flex flex-col">
-                                    <h3 class="ff_inter font-medium text-two_xs md:text-sm leading-[150%]">Wade Warren
-                                    </h3>
-                                    <p
-                                        class="ff_inter font-normal text-three_xs md:text-two_xs leading-[14px] opacity-60">
-                                        HTML Developer
-                                    </p>
-                                </div>
-
-                                <div class="flex flex-col">
-                                    <h3 class="ff_inter font-medium text-two_xs md:text-sm leading-[150%]">$80/hr</h3>
-                                    <div class="flex justify-end">
-                                        <img class="w-[10px] sm:w-[14px]" src="./assets/images/webp/Star.webp"
-                                            alt="Star">
-                                        <p class="ff_inter font-normal text-two_xs leading-[14px] opacity-60 mb-0 ps-1">
-                                            4.5
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="pt-2.5 flex gap-1.5 mb-4">
-                                <div
-                                    class="border border-solid border-[#e6e6e6] bg-white py-0.5 px-1.5 md:py-1 md:px-2.5 rounded-[50px]">
-                                    <p class="ff_inter font-medium leading-3 text-three_xs text-black opacity-70">
-                                        HTML
-                                    </p>
-                                </div>
-
-                                <div
-                                    class="border border-solid border-[#e6e6e6] bg-white py-0.5 px-1.5 md:py-1 md:px-2.5 rounded-[50px]">
-                                    <p class="ff_inter font-medium leading-3 text-three_xs text-black opacity-70">
-                                        Bootstrap
-                                    </p>
-                                </div>
-
-                                <div
-                                    class="border border-solid border-[#e6e6e6] bg-white  py-0.5 px-1.5 md:py-1 md:px-2.5 rounded-[50px]">
-                                    <p class="ff_inter font-medium leading-3 text-three_xs text-black opacity-70">
-                                        CSS
-                                    </p>
-                                </div>
-                            </div>
-
-                            <div class="max-w-[107px] h-[33px] mb-1.5">
-                                <button
-                                    class="ff_inter font-semibold text-two_xs md:text-xs text-white py-1.5 px-5 leading-[150%] rounded-[40px] bg-[#14a800]">Chat
-                                    Now</button>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div
-                        class="border-white border border-solid w-[165px] md:w-[218px] rounded-[10px] bg-white mt-10 pt-2.5 px-2 box_shadow">
-                        <img class="h-[75px] w-[151px] md:w-[203px] md:h-[125px]"
-                            src="./assets/images/webp/developer_img_1.webp" alt="developer_img_1">
-                        <div class="flex flex-col">
-                            <div class="flex items-center justify-between pt-2 md:pt-2.5">
-                                <div class="flex flex-col">
-                                    <h3 class="ff_inter font-medium text-two_xs md:text-sm leading-[150%]">Wade Warren
-                                    </h3>
-                                    <p
-                                        class="ff_inter font-normal text-three_xs md:text-two_xs leading-[14px] opacity-60">
-                                        HTML Developer
-                                    </p>
-                                </div>
-
-                                <div class="flex flex-col">
-                                    <h3 class="ff_inter font-medium text-two_xs md:text-sm leading-[150%]">$80/hr</h3>
-                                    <div class="flex justify-end">
-                                        <img class="w-[10px] sm:w-[14px]" src="./assets/images/webp/Star.webp"
-                                            alt="Star">
-                                        <p class="ff_inter font-normal text-two_xs leading-[14px] opacity-60 mb-0 ps-1">
-                                            4.5
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="pt-2.5 flex gap-1.5 mb-4">
-                                <div
-                                    class="border border-solid border-[#e6e6e6] bg-white py-0.5 px-1.5 md:py-1 md:px-2.5 rounded-[50px]">
-                                    <p class="ff_inter font-medium leading-3 text-three_xs text-black opacity-70">
-                                        HTML
-                                    </p>
-                                </div>
-
-                                <div
-                                    class="border border-solid border-[#e6e6e6] bg-white py-0.5 px-1.5 md:py-1 md:px-2.5 rounded-[50px]">
-                                    <p class="ff_inter font-medium leading-3 text-three_xs text-black opacity-70">
-                                        Bootstrap
-                                    </p>
-                                </div>
-
-                                <div
-                                    class="border border-solid border-[#e6e6e6] bg-white  py-0.5 px-1.5 md:py-1 md:px-2.5 rounded-[50px]">
-                                    <p class="ff_inter font-medium leading-3 text-three_xs text-black opacity-70">
-                                        CSS
-                                    </p>
-                                </div>
-                            </div>
-
-                            <div class="max-w-[107px] h-[33px] mb-1.5">
-                                <button
-                                    class="ff_inter font-semibold text-two_xs md:text-xs text-white py-1.5 px-5 leading-[150%] rounded-[40px] bg-[#14a800]">Chat
-                                    Now</button>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div
-                        class="border-white border border-solid w-[165px] md:w-[218px] rounded-[10px] bg-white mt-10 pt-2.5 px-2 box_shadow">
-                        <img class="h-[75px] w-[151px] md:w-[203px] md:h-[125px]"
-                            src="./assets/images/webp/developer_img_1.webp" alt="developer_img_1">
-                        <div class="flex flex-col">
-                            <div class="flex items-center justify-between pt-2 md:pt-2.5">
-                                <div class="flex flex-col">
-                                    <h3 class="ff_inter font-medium text-two_xs md:text-sm leading-[150%]">Wade Warren
-                                    </h3>
-                                    <p
-                                        class="ff_inter font-normal text-three_xs md:text-two_xs leading-[14px] opacity-60">
-                                        HTML Developer
-                                    </p>
-                                </div>
-
-                                <div class="flex flex-col">
-                                    <h3 class="ff_inter font-medium text-two_xs md:text-sm leading-[150%]">$80/hr</h3>
-                                    <div class="flex justify-end">
-                                        <img class="w-[10px] sm:w-[14px]" src="./assets/images/webp/Star.webp"
-                                            alt="Star">
-                                        <p class="ff_inter font-normal text-two_xs leading-[14px] opacity-60 mb-0 ps-1">
-                                            4.5
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="pt-2.5 flex gap-1.5 mb-4">
-                                <div
-                                    class="border border-solid border-[#e6e6e6] bg-white py-0.5 px-1.5 md:py-1 md:px-2.5 rounded-[50px]">
-                                    <p class="ff_inter font-medium leading-3 text-three_xs text-black opacity-70">
-                                        HTML
-                                    </p>
-                                </div>
-
-                                <div
-                                    class="border border-solid border-[#e6e6e6] bg-white py-0.5 px-1.5 md:py-1 md:px-2.5 rounded-[50px]">
-                                    <p class="ff_inter font-medium leading-3 text-three_xs text-black opacity-70">
-                                        Bootstrap
-                                    </p>
-                                </div>
-
-                                <div
-                                    class="border border-solid border-[#e6e6e6] bg-white  py-0.5 px-1.5 md:py-1 md:px-2.5 rounded-[50px]">
-                                    <p class="ff_inter font-medium leading-3 text-three_xs text-black opacity-70">
-                                        CSS
-                                    </p>
-                                </div>
-                            </div>
-
-                            <div class="max-w-[107px] h-[33px] mb-1.5">
-                                <button
-                                    class="ff_inter font-semibold text-two_xs md:text-xs text-white py-1.5 px-5 leading-[150%] rounded-[40px] bg-[#14a800]">Chat
-                                    Now</button>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div
-                        class="border-white border border-solid w-[165px] md:w-[218px] rounded-[10px] bg-white mt-10 pt-2.5 px-2 box_shadow">
-                        <img class="h-[75px] w-[151px] md:w-[203px] md:h-[125px]"
-                            src="./assets/images/webp/developer_img_1.webp" alt="developer_img_1">
-                        <div class="flex flex-col">
-                            <div class="flex items-center justify-between pt-2 md:pt-2.5">
-                                <div class="flex flex-col">
-                                    <h3 class="ff_inter font-medium text-two_xs md:text-sm leading-[150%]">Wade Warren
-                                    </h3>
-                                    <p
-                                        class="ff_inter font-normal text-three_xs md:text-two_xs leading-[14px] opacity-60">
-                                        HTML Developer
-                                    </p>
-                                </div>
-
-                                <div class="flex flex-col">
-                                    <h3 class="ff_inter font-medium text-two_xs md:text-sm leading-[150%]">$80/hr</h3>
-                                    <div class="flex justify-end">
-                                        <img class="w-[10px] sm:w-[14px]" src="./assets/images/webp/Star.webp"
-                                            alt="Star">
-                                        <p class="ff_inter font-normal text-two_xs leading-[14px] opacity-60 mb-0 ps-1">
-                                            4.5
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="pt-2.5 flex gap-1.5 mb-4">
-                                <div
-                                    class="border border-solid border-[#e6e6e6] bg-white py-0.5 px-1.5 md:py-1 md:px-2.5 rounded-[50px]">
-                                    <p class="ff_inter font-medium leading-3 text-three_xs text-black opacity-70">
-                                        HTML
-                                    </p>
-                                </div>
-
-                                <div
-                                    class="border border-solid border-[#e6e6e6] bg-white py-0.5 px-1.5 md:py-1 md:px-2.5 rounded-[50px]">
-                                    <p class="ff_inter font-medium leading-3 text-three_xs text-black opacity-70">
-                                        Bootstrap
-                                    </p>
-                                </div>
-
-                                <div
-                                    class="border border-solid border-[#e6e6e6] bg-white  py-0.5 px-1.5 md:py-1 md:px-2.5 rounded-[50px]">
-                                    <p class="ff_inter font-medium leading-3 text-three_xs text-black opacity-70">
-                                        CSS
-                                    </p>
-                                </div>
-                            </div>
-
-                            <div class="max-w-[107px] h-[33px] mb-1.5">
-                                <button
-                                    class="ff_inter font-semibold text-two_xs md:text-xs text-white py-1.5 px-5 leading-[150%] rounded-[40px] bg-[#14a800]">Chat
-                                    Now</button>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-
-            <div class="tab-content" id="tab5" style="display: none;">
-                <div class="flex items-center slider_1">
+            <!-- CSS -->
+            <div class="cardcontent hidden" id="css">
+                <div class="flex items-center">
 
                     <div
                         class="border-white border border-solid w-[165px] md:w-[218px] rounded-[10px] bg-white mt-10 pt-2.5 px-2 box_shadow">
@@ -1642,7 +1932,142 @@
         </div>
     </header>
 
-    <!----------- meet top coder ----------->
+    <!---------- Meet top coder ---------->
+    <section class="pt-[109px] pb-[193px] bg-[#fcfcfc]">
+        <div class="max-w-[1164px] mx-auto px-3">
+            <h2 class="mx-auto max-w-[523px] font-semibold text-two_xl text-center ff_outfit leading-[118%]">Meet top
+                coder ready to
+                <span class="text-lightgreen">Chat and hire</span>
+            </h2>
+
+            <div class="flex justify-between flex-wrap mt-[52px]">
+
+                <div class="w-7/12">
+                    <div class="flex flex-col">
+                        <img class="w-full mb-4 !max-w-[659px]" src="./assets/images/webp/Courtney_Henry.webp"
+                            alt="Courtney_Henry">
+                        <h3 class="ff_inter font-semibold text-xl leading-[130%] text-black1">Courtney Henry</h3>
+                        <p class="ff_inter font-normal mt-1 text-sm leading-[150%] text-black1">Java Developer</p>
+
+                        <div class="flex items-center gap-3 mt-2">
+                            <img class="w-[12px]" src="./assets/images/webp/Star.webp" alt="Star">
+                            <img class="w-[12px]" src="./assets/images/webp/Star.webp" alt="Star">
+                            <img class="w-[12px]" src="./assets/images/webp/Star.webp" alt="Star">
+                            <img class="w-[12px]" src="./assets/images/webp/Star.webp" alt="Star">
+                            <img class="w-[12px]" src="./assets/images/webp/Star.webp" alt="Star">
+                        </div>
+
+                        <p class="opacity-70 ff_inter font-normal text-sm leading-[160%] text-black mt-4 max-w-[659px]">
+                            “Senectus tempus porttitor sed id dignissim. At et euismod adipiscing mattis vestibulum
+                            odio. Curabitur consectetur commodo neque nullam aenean molestie tristique. Proin feugiat
+                            aenean pulvinar eget nulla sagittis in. Nisi viverra fames quis consequat nullam”</p>
+                    </div>
+                </div>
+
+                <div class="w-5/12 ps-3">
+
+                    <div class="border border-[#e0e0e0] rounded-[12px] !max-w-[461px] px-2 py-3">
+                        <div class="flex items-center gap-2.5">
+                            <img class="w-[62px]" src="./assets/images/webp/Eleanor_Pena.webp" alt="Eleanor_Pena">
+                            <div class="flex flex-col">
+                                <h5 class="ff_inter font-semibold text-md leading-[121%] text-black1">Eleanor Pena</h5>
+                                <p class="ff_inter font-normal text-sm leading-[150%] mt-1 text-black1 opacity-60">
+                                    JavaScript
+                                    Developer</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-center  justify-between mt-1">
+                            <div class="flex">
+                                <img class="w-[12px]" src="./assets/images/webp/Star.webp" alt="star">
+                                <img class="w-[12px]" src="./assets/images/webp/Star.webp" alt="star">
+                                <img class="w-[12px]" src="./assets/images/webp/Star.webp" alt="star">
+                                <img class="w-[12px]" src="./assets/images/webp/Star.webp" alt="star">
+                                <img class="w-[12px]" src="./assets/images/webp/Star.webp" alt="star">
+                            </div>
+
+                            <p class="ff_inter font-normal text-xs leading-[150%] text-lightgreen opacity-60">
+                                Experience: 10 Years</p>
+
+                        </div>
+
+                        <p
+                            class="ff_inter font-normal leading-[150%] text-xs text-black opacity-70 mt-0.5 max-w-[436px]">
+                            “Senectus tempus porttitor sed id dignissim. At et euismod adipiscing mattis vestibulum
+                            odio. Curabitur consectetur commodo neque nullam aenean molestie tristique.</p>
+
+                    </div>
+
+                    <div class="border border-[#e0e0e0] rounded-[12px] !max-w-[461px] px-2 py-3 my-2.5">
+                        <div class="flex items-center gap-2.5">
+                            <img class="w-[62px]" src="./assets/images/webp/Devon_Lane.webp" alt="Devon_Lane">
+                            <div class="flex flex-col">
+                                <h5 class="ff_inter font-semibold text-md leading-[121%] text-black1">Devon Lane</h5>
+                                <p class="ff_inter font-normal text-sm leading-[150%] mt-1 text-black1 opacity-60">
+                                    Java
+                                    Developer</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-center  justify-between mt-1">
+                            <div class="flex">
+                                <img class="w-[12px]" src="./assets/images/webp/Star.webp" alt="star">
+                                <img class="w-[12px]" src="./assets/images/webp/Star.webp" alt="star">
+                                <img class="w-[12px]" src="./assets/images/webp/Star.webp" alt="star">
+                                <img class="w-[12px]" src="./assets/images/webp/Star.webp" alt="star">
+                                <img class="w-[12px]" src="./assets/images/webp/Star.webp" alt="star">
+                            </div>
+
+                            <p class="ff_inter font-normal text-xs leading-[150%] text-lightgreen opacity-60">
+                                Experience: 10 Years</p>
+
+                        </div>
+
+                        <p
+                            class="ff_inter font-normal leading-[150%] text-xs text-black opacity-70 mt-0.5 max-w-[436px]">
+                            “Senectus tempus porttitor sed id dignissim. At et euismod adipiscing mattis vestibulum
+                            odio. Curabitur consectetur commodo neque nullam aenean molestie tristique.</p>
+
+                    </div>
+
+                    <div class="border border-[#e0e0e0] rounded-[12px] !max-w-[461px] px-2 py-3">
+                        <div class="flex items-center gap-2.5">
+                            <img class="w-[62px]" src="./assets/images/webp/Ralph_Edwards.webp" alt="Ralph_Edwards">
+                            <div class="flex flex-col">
+                                <h5 class="ff_inter font-semibold text-md leading-[121%] text-black1">Ralph Edwards</h5>
+                                <p class="ff_inter font-normal text-sm leading-[150%] mt-1 text-black1 opacity-60">
+                                    JavaScript
+                                    Developer</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-center  justify-between mt-1">
+                            <div class="flex">
+                                <img class="w-[12px]" src="./assets/images/webp/Star.webp" alt="star">
+                                <img class="w-[12px]" src="./assets/images/webp/Star.webp" alt="star">
+                                <img class="w-[12px]" src="./assets/images/webp/Star.webp" alt="star">
+                                <img class="w-[12px]" src="./assets/images/webp/Star.webp" alt="star">
+                                <img class="w-[12px]" src="./assets/images/webp/Star.webp" alt="star">
+                            </div>
+
+                            <p class="ff_inter font-normal text-xs leading-[150%] text-lightgreen opacity-60">
+                                Experience: 10 Years</p>
+
+                        </div>
+
+                        <p
+                            class="ff_inter font-normal leading-[150%] text-xs text-black opacity-70 mt-0.5 max-w-[436px]">
+                            “Senectus tempus porttitor sed id dignissim. At et euismod adipiscing mattis vestibulum
+                            odio. Curabitur consectetur commodo neque nullam aenean molestie tristique.</p>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!----------- Teams ----------->
     <section class="bg-[#f4f4f4] overflow-hidden">
         <div class="max-w-[1440px] mx-auto relative">
             <img class="absolute end-[-60%] sm:end-0 bottom-[38%] sm:bottom-[40%] lg:bottom-0"
@@ -1819,7 +2244,7 @@
     </section>
 
     <!------------- experience_section -------------->
-    <section class="bg-[#fcfcfc] ">
+    <section class="bg-[#fcfcfc]">
         <div class="max-w-[1440px] mx-auto py-[75px] sm:py-[80px] md:py-[100px] lg:py-[140px]">
             <div class="max-w-[1164px] mx-auto px-5 lg:px-3">
 
@@ -1937,7 +2362,7 @@
                         </div>
                     </div>
                     <!-- 5 -->
-                    <div class="sm:w-6/12 md:w-4/12 lg:w-3/12 lg:py-[50px] pt-[30px] sm:py-[30px] experience_content">
+                    <div class="sm:w-6/12 md:w-4/12 lg:w-3/12 lg:py-[50px] pt-[30px] sm:py-[30px]">
                         <div class="flex flex-col">
                             <div class="flex items-center gap-2.5 sm:gap-3">
                                 <img class="w-[40px] sm:w-[45px]" src="./assets/images/webp/database_img.webp"
@@ -1962,7 +2387,7 @@
                         </div>
                     </div>
                     <!-- 6 -->
-                    <div class="sm:w-6/12 md:w-4/12 lg:w-3/12 lg:py-[50px] pt-[30px] sm:py-[30px] experience_content">
+                    <div class="sm:w-6/12 md:w-4/12 lg:w-3/12 lg:py-[50px] pt-[30px] sm:py-[30px]">
                         <div class="flex flex-col">
                             <div class="flex items-center gap-2.5 sm:gap-3">
                                 <img class="w-[40px] sm:w-[45px]" src="./assets/images/webp/react_js_img.webp"
@@ -1987,7 +2412,7 @@
                         </div>
                     </div>
                     <!-- 7 -->
-                    <div class="sm:w-6/12 md:w-4/12 lg:w-3/12 lg:py-[50px] pt-[30px] sm:py-[30px] experience_content">
+                    <div class="sm:w-6/12 md:w-4/12 lg:w-3/12 lg:py-[50px] pt-[30px] sm:py-[30px]">
                         <div class="flex flex-col">
                             <div class="flex items-center gap-2.5 sm:gap-3">
                                 <img class="w-[40px] sm:w-[45px]" src="./assets/images/webp/next_js_img.webp"
@@ -2012,7 +2437,7 @@
                         </div>
                     </div>
                     <!-- 8 -->
-                    <div class="sm:w-6/12 md:w-4/12 lg:w-3/12 lg:py-[50px] pt-[30px] sm:py-[30px] experience_content">
+                    <div class="sm:w-6/12 md:w-4/12 lg:w-3/12 lg:py-[50px] pt-[30px] sm:py-[30px]">
                         <div class="flex flex-col">
                             <div class="flex items-center gap-2.5 sm:gap-3">
                                 <img class="w-[40px] sm:w-[45px]" src="./assets/images/webp/angular_js_img.webp"
@@ -2037,7 +2462,7 @@
                         </div>
                     </div>
                     <!-- 9 -->
-                    <div class="sm:w-6/12 md:w-4/12 lg:w-3/12 pt-[30px] sm:pt-0 experience_content">
+                    <div class="sm:w-6/12 md:w-4/12 lg:w-3/12 pt-[30px] sm:pt-0">
                         <div class="flex flex-col">
                             <div class="flex items-center gap-2.5 sm:gap-3">
                                 <img class="w-[40px] sm:w-[45px]" src="./assets/images/webp/Ai_img.webp"
@@ -2062,7 +2487,7 @@
                         </div>
                     </div>
                     <!-- 10 -->
-                    <div class="w-full sm:w-6/12 md:w-4/12 lg:w-3/12 pt-[30px] sm:pt-0 experience_content">
+                    <div class="w-full sm:w-6/12 md:w-4/12 lg:w-3/12 pt-[30px] sm:pt-0">
                         <div class="flex flex-col">
                             <div class="flex items-center gap-3">
                                 <img class="w-[45px]" src="./assets/images/webp/mongo_db.webp" alt="mongo_db">
@@ -2084,7 +2509,7 @@
                         </div>
                     </div>
                     <!-- 11 -->
-                    <div class="sm:w-6/12 md:w-4/12 lg:w-3/12 pt-[30px] md:pt-0 experience_content">
+                    <div class="sm:w-6/12 md:w-4/12 lg:w-3/12 pt-[30px] md:pt-0">
                         <div class="flex flex-col">
                             <div class="flex items-center gap-3">
                                 <img class="w-[45px]" src="./assets/images/webp/SQL.webp" alt="SQL">
@@ -2106,7 +2531,7 @@
                         </div>
                     </div>
                     <!-- 12 -->
-                    <div class="sm:w-6/12 md:w-4/12 lg:w-3/12 pt-[30px] md:pt-0 experience_content">
+                    <div class="sm:w-6/12 md:w-4/12 lg:w-3/12 pt-[30px] md:pt-0">
                         <div class="flex flex-col">
                             <div class="flex items-center gap-3">
                                 <img class="w-[45px]" src="./assets/images/webp/backend_img.webp" alt="backend_img">
@@ -2128,12 +2553,6 @@
                         </div>
                     </div>
 
-                    <button
-                        class="show_btn ff_-outfit font-medium text-sm leading-[150%] text-black sm:hidden pt-7">Show
-                        More...</button>
-                    <button
-                        class="hide_btn ff_-outfit font-medium text-sm leading-[150%] text-black sm:hidden pt-7">Hide</button>
-
                 </div>
 
             </div>
@@ -2149,7 +2568,7 @@
                         class="ff_outfit text-[28px] sm:text-[35px] md:text-[40px] lg:text-two_xl font-semibold leading-[118%] pb-6 sm:pb-10 md:pb-[57px] text-center sm:text-start">
                         How it <span class="text-lightgreen">Works</span></h2>
 
-                    <div class="tab overflow-hidden flex flex-col">
+                    <div class="tab flex flex-col">
 
                         <div class="relative z-10">
                             <img class="ps-6 sm:ps-7 mt-7" src="./assets/images/webp/dotted_line.webp"
@@ -2207,16 +2626,12 @@
                                         Pay Only when task is done as Scrum Managed by Us.</p>
                                 </div>
                             </div>
-
-
                         </div>
-
-
                     </div>
                 </div>
 
                 <div class="lg:w-6/12 w-full flex justify-center mt-11 lg:mt-0">
-                    <div id="London" class="tabcontent hidden py-[6px] px-3">
+                    <div id="London" class="tabcontent py-[6px] px-3">
                         <img class="max-w-[576px] w-full" src="./assets/images/webp/works_img_1.webp" alt="works_img_1">
                     </div>
 
@@ -2358,6 +2773,11 @@
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <!-- js file link -->
     <script src="./assets/js/style.js"></script>
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 </body>
 
 </html>

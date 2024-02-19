@@ -23,11 +23,6 @@ html {
     font-family: "Poppins", sans-serif;
 }
 
-.tabs li.active a {
-    background-color: #fff;
-    color: #111111;
-}
-
 .box_shadow {
     box-shadow: 0px 1px 37px 0px #00000026;
 }
@@ -57,4 +52,33 @@ html {
 
 .tab button.active {
     color: #14A800;
+}
+
+:focus-visible {
+    outline: none !important;
+}
+
+.more-content {
+    display: none;
+}
+
+.swiper {
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
