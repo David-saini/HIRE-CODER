@@ -124,7 +124,7 @@ hideBtn.addEventListener("click", function () {
 hideBtn.style.display = "none";
 
 
-// 2nd tab
+// work tab
 document.getElementById('London').style.display = "block";
 document.querySelector('.tablinks.active').classList.remove('active');
 document.querySelector('.tablinks:first-child').classList.add('active');
