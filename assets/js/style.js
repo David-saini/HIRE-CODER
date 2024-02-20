@@ -96,6 +96,50 @@ $('.slider_2').slick({
     ]
 });
 
+// developers_slider
+$('.developers_slider').slick({
+    infinite: true,
+    dots: false,
+    arrows: false,
+    autoplay: true,
+    prevArrow: $(".prev"),
+    nextArrow: $(".next"),
+    speed: 800,
+    slidesToShow: 6,
+    slidesToScroll: 1,
+
+    responsive: [
+        {
+            breakpoint: 1145,
+            settings: {
+                slidesToShow: 5,
+                slidesToScroll: 1,
+            }
+        },
+        {
+            breakpoint: 992,
+            settings: {
+                slidesToShow: 4,
+                slidesToScroll: 1,
+            }
+        },
+        {
+            breakpoint: 769,
+            settings: {
+                slidesToShow: 3,
+                slidesToScroll: 1,
+            }
+        },
+        {
+            breakpoint: 600,
+            settings: {
+                slidesToShow: 2,
+                slidesToScroll: 1,
+            }
+        },
+    ]
+});
+
 // work tab
 document.getElementById('London').style.display = "block";
 document.querySelector('.tablinks.active').classList.remove('active');

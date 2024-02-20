@@ -62,23 +62,39 @@ html {
     display: none;
 }
 
-.swiper {
-    width: 100%;
-    height: 100%;
+.arrow_fill {
+    fill: none;
+    cursor: pointer;
 }
 
-.swiper-slide {
-    text-align: center;
-    font-size: 18px;
-    background: #fff;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.arrow_fill:hover {
+    fill: #14A800;
 }
 
-.swiper-slide img {
-    display: block;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+.arrow_fill:hover rect {
+    fill: #14A800;
+}
+
+.arrow_fill:hover path {
+    fill: white;
+    transition: all 300ms linear;
+}
+
+.mobile_screen_arrow {
+    fill: none;
+}
+
+.mobile_screen_arrow:hover {
+    fill: #14A800;
+}
+
+.mobile_screen_arrow:hover rect {
+    fill: #14A800;
+    stroke: #14A800;
+}
+
+
+.mobile_screen_arrow:hover path {
+    fill: white;
+    transition: all 300ms linear;
 }
