@@ -100,7 +100,7 @@ $('.slider_2').slick({
 $('.developers_slider').slick({
     infinite: true,
     dots: false,
-    arrows: false,
+    arrows: true,
     autoplay: true,
     prevArrow: $(".prev"),
     nextArrow: $(".next"),
