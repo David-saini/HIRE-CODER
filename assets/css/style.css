@@ -40,8 +40,8 @@ html {
 }
 
 .slick-slide {
-    margin-left: 6px;
-    margin-right: 6px;
+    margin-left: 15px;
+    margin-right: 15px;
 }
 
 @media (max-width:576px) {
