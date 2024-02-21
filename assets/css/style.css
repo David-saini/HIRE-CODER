@@ -111,4 +111,5 @@ html {
 
 .view_btn:hover svg path {
     fill: #14A800;
+    transition: all 200ms linear;
 }
