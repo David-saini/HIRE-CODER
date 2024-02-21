@@ -26,41 +26,6 @@ function languageName(evt, coders) {
     evt.currentTarget.classList.add("active");
 }
 
-// slider_1
-$('.slider_1').slick({
-    infinite: true,
-    dots: false,
-    arrows: false,
-    autoplay: true,
-    speed: 800,
-    slidesToShow: 5,
-    slidesToScroll: 1,
-
-    responsive: [
-        {
-            breakpoint: 1024,
-            settings: {
-                slidesToShow: 3.5,
-                slidesToScroll: 1,
-            }
-        },
-        {
-            breakpoint: 768,
-            settings: {
-                slidesToShow: 3,
-                slidesToScroll: 1,
-            }
-        },
-        {
-            breakpoint: 640,
-            settings: {
-                slidesToShow: 2.05,
-                slidesToScroll: 1,
-            }
-        },
-    ]
-});
-
 // slider_2
 $('.slider_2').slick({
     infinite: true,
@@ -106,50 +71,6 @@ $('.developers_slider').slick({
     nextArrow: $(".next"),
     speed: 800,
     slidesToShow: 6,
-    slidesToScroll: 1,
-
-    responsive: [
-        {
-            breakpoint: 1145,
-            settings: {
-                slidesToShow: 5,
-                slidesToScroll: 1,
-            }
-        },
-        {
-            breakpoint: 992,
-            settings: {
-                slidesToShow: 4,
-                slidesToScroll: 1,
-            }
-        },
-        {
-            breakpoint: 769,
-            settings: {
-                slidesToShow: 3,
-                slidesToScroll: 1,
-            }
-        },
-        {
-            breakpoint: 600,
-            settings: {
-                slidesToShow: 2,
-                slidesToScroll: 1,
-            }
-        },
-    ]
-});
-
-// dev_info_card
-$('.dev_info_card').slick({
-    infinite: true,
-    dots: false,
-    arrows: true,
-    autoplay: true,
-    prevArrow: $(".prev"),
-    nextArrow: $(".next"),
-    speed: 800,
-    slidesToShow: 2,
     slidesToScroll: 1,
 
     responsive: [
