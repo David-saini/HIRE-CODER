@@ -127,3 +127,19 @@ function openCity(evt, cityName) {
 document.getElementById('London').style.display = "block";
 document.querySelector('.tablinks.active').classList.remove('active');
 document.querySelector('.tablinks:first-child').classList.add('active');
+
+//show more btn
+var toggleBtn = document.getElementById("toggleBtn");
+var content = document.getElementById("content");
+
+toggleBtn.addEventListener("click", function () {
+    if (content.style.display === "none") {
+        content.style.display = "block";
+        toggleBtn.textContent = "Show Less";
+    } else {
+        // If visible, hide the content
+        content.style.display = "none";
+        toggleBtn.textContent = "Show More...";
+    }
+});
+
