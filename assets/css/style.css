@@ -46,7 +46,7 @@ html {
 
 @media (max-width:576px) {
     .header_bg {
-        background: url(/assets/images/webp/mobil_screen.webp);
+        background: url(/assets/images/webp/mobile_screen.webp);
     }
 }
 
