@@ -1,3 +1,4 @@
+// navbar function
 function opennav() {
     document.getElementById("menu").style.left = "0%";
     document.getElementsByTagName("body")[0].style.overflow = "hidden";
@@ -26,12 +27,11 @@ function languageName(evt, coders) {
     evt.currentTarget.classList.add("active");
 }
 
-// slider_2
+// slider_1
 $('.slider_1').slick({
     infinite: true,
-    dots: false,
-    arrows: false,
     autoplay: true,
+    arrows: false,
     speed: 800,
     slidesToShow: 7,
     slidesToScroll: 1,
@@ -123,7 +123,6 @@ function openCity(evt, cityName) {
     document.getElementById(cityName).style.display = "block";
     evt.currentTarget.className += " active";
 }
-
 document.getElementById('London').style.display = "block";
 document.querySelector('.tablinks.active').classList.remove('active');
 document.querySelector('.tablinks:first-child').classList.add('active');
