@@ -27,7 +27,7 @@ function languageName(evt, coders) {
 }
 
 // slider_2
-$('.slider_2').slick({
+$('.slider_1').slick({
     infinite: true,
     dots: false,
     arrows: false,

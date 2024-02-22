@@ -39,11 +39,6 @@ html {
     background: url(/assets/images/webp/home.webp);
 }
 
-.slick-slide {
-    margin-left: 15px;
-    margin-right: 15px;
-}
-
 @media (max-width:576px) {
     .header_bg {
         background: url(/assets/images/webp/mobile_screen.webp);
