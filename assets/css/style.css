@@ -31,10 +31,6 @@ html {
     box-shadow: 0px 9px 24px 5px #0000000D;
 }
 
-.scroller::-webkit-scrollbar {
-    display: none;
-}
-
 .header_bg {
     background: url(/assets/images/webp/home.webp);
 }

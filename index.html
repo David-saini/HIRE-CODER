@@ -2050,21 +2050,29 @@
                 </div>
             </div>
 
-            <div class="flex items-center justify-between mt-[52px] sm:mt-3 slider_1">
+
+            <div class="slider_1 mt-[52px] sm:mt-3 Swiper2">
                 <a href="#" target="_blank"><img class="max-w-[87px] md:max-w-[171px] mx-auto"
                         src="./assets/images/webp/virmedica.webp" alt="virmedica"></a>
-                <a href="#" target="_blank"><img class="max-w-[107px] md:max-w-[159px]"
+
+                <a href="#" target="_blank"><img class="max-w-[107px] md:max-w-[159px] ps-10"
                         src="./assets/images/webp/kenzan.webp" alt="kenzan"></a>
-                <a href="#" target="_blank"><img class="max-w-[126px] md:max-w-[210px] mx-auto"
-                        src="./assets/images/webp/actulize.webp" alt="virmedica"></a>
-                <a href="#" target="_blank"><img class="max-w-[126px] md:max-w-[210px] mx-auto"
-                        src="./assets/images/webp/demandforce.webp" alt="virmedica"></a>
-                <a href="#" target="_blank"><img class="max-w-[30px] md:max-w-[43px] mx-auto"
-                        src="./assets/images/webp/wex.webp" alt="virmedica"></a>
+
+                <a href="#" target="_blank"><img class="max-w-[126px] md:max-w-[210px] mx-auto ps-[20px]"
+                        src="./assets/images/webp/actulize.webp" alt="actulize"></a>
+
+                <a href="#" target="_blank"><img class="max-w-[126px] md:max-w-[210px] mx-auto ps-7 sm:ps-[61px]"
+                        src="./assets/images/webp/demandforce.webp" alt="demandforce"></a>
+
+                <a href="#" target="_blank"><img class="max-w-[30px] md:max-w-[43px] ms-10 sm:ms-24"
+                        src="./assets/images/webp/wex.webp" alt="wex"></a>
+
                 <a href="#" target="_blank"><img class="max-w-[70px] md:max-w-[94px] mx-auto"
-                        src="./assets/images/webp/paypal.webp" alt="virmedica"></a>
+                        src="./assets/images/webp/paypal.webp" alt="paypal"></a>
+
                 <a href="#" target="_blank"><img class="max-w-[40px] md:max-w-[52px] mx-auto"
-                        src="./assets/images/webp/saleforce.webp" alt="virmedica"></a>
+                        src="./assets/images/webp/saleforce.webp" alt="saleforce"></a>
+
             </div>
 
         </div>
@@ -2281,6 +2289,7 @@
 
                         <div class="lg:hidden block flex swiper swipper1">
                             <div class="swiper-wrapper">
+
                                 <div class="swiper-slide max-w-[308px] !md:max-w-[461px]">
                                     <div
                                         class="border border-[#e0e0e0] rounded-[12px] bg-white max-w-[308px] !md:max-w-[461px] p-2.5 md:px-2 md:py-3 hover:border-[#1dab0a] transition-all duration-200">
@@ -3525,6 +3534,7 @@
             centeredSlides: false,
             slidesPerView: 2.1,
             Infinity: true,
+            loop: true,
             autoplay: {
                 delay: 2500,
                 disableOnInteraction: false,
@@ -3557,10 +3567,48 @@
     </script>
 
     <script>
+        var swiper = new Swiper(".Swiper2", {
+            spaceBetween: 1,
+            centeredSlides: false,
+            slidesPerView: 3,
+            Infinity: true,
+            loop: true,
+            autoplay: {
+                delay: 2500,
+                disableOnInteraction: false,
+            },
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+            breakpoints: {
+                1150: {
+                    slidesPerView: 7,
+                },
+                992: {
+                    slidesPerView: 4,
+                },
+
+                768: {
+                    slidesPerView: 3,
+                },
+                576: {
+                    slidesPerView: 3,
+                },
+            },
+        });
+
+    </script>
+
+    <script>
         var swiper = new Swiper(".swipper1", {
             spaceBetween: 10,
             centeredSlides: false,
-            slidesPerView: 1.2,
+            slidesPerView: 2,
             Infinity: true,
             autoplay: {
                 delay: 2500,
