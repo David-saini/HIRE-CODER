@@ -89,14 +89,21 @@ $('.developers_slider').slick({
             }
         },
         {
-            breakpoint: 769,
+            breakpoint: 768,
             settings: {
                 slidesToShow: 3,
                 slidesToScroll: 1,
             }
         },
         {
-            breakpoint: 600,
+            breakpoint: 550,
+            settings: {
+                slidesToShow: 2.1,
+                slidesToScroll: 1,
+            }
+        },
+        {
+            breakpoint: 460,
             settings: {
                 slidesToShow: 2,
                 slidesToScroll: 1,
@@ -104,7 +111,6 @@ $('.developers_slider').slick({
         },
     ]
 });
-
 // work tab
 document.getElementById('London').style.display = "block";
 document.querySelector('.tablinks.active').classList.remove('active');
