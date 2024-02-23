@@ -2912,7 +2912,8 @@
                         </div>
                     </div>
                     <!-- 7 -->
-                    <div class="sm:w-6/12 md:w-4/12 lg:w-3/12 lg:py-[50px] pt-[30px] sm:py-[30px] sm:block hidden">
+                    <div
+                        class="sm:w-6/12 md:w-4/12 lg:w-3/12 lg:py-[50px] pt-[30px] sm:pt-0 sm:pb-[30px] sm:block hidden">
                         <div class="flex flex-col">
                             <div class="flex items-center gap-2.5 sm:gap-3">
                                 <img class="w-[40px] sm:w-[45px]" src="./assets/images/webp/next_js_img.webp"
@@ -2942,7 +2943,8 @@
                         </div>
                     </div>
                     <!-- 8 -->
-                    <div class="sm:w-6/12 md:w-4/12 lg:w-3/12 lg:py-[50px] pt-[30px] sm:py-[30px] sm:block hidden">
+                    <div
+                        class="sm:w-6/12 md:w-4/12 lg:w-3/12 lg:py-[50px] pt-[30px] sm:pt-0 sm:pb-[30px] sm:block hidden">
                         <div class="flex flex-col">
                             <div class="flex items-center gap-2.5 sm:gap-3">
                                 <img class="w-[40px] sm:w-[45px]" src="./assets/images/webp/angular_js_img.webp"
@@ -3177,7 +3179,7 @@
                             </div>
                         </div>
                         <!-- 8 -->
-                        <div class="sm:w-6/12 md:w-4/12 lg:w-3/12 lg:py-[50px] pt-[30px] sm:py-[30px]">
+                        <div class="sm:w-6/12 md:w-4/12 lg:w-3/12 lg:py-[50px] pt-[30px] sm:pb-[30px]">
                             <div class="flex flex-col">
                                 <div class="flex items-center gap-2.5 sm:gap-3">
                                     <img class="w-[40px] sm:w-[45px]" src="./assets/images/webp/angular_js_img.webp"
@@ -3208,7 +3210,7 @@
                             </div>
                         </div>
                         <!-- 9 -->
-                        <div class="sm:w-6/12 md:w-4/12 lg:w-3/12 pt-[30px] sm:pt-0">
+                        <div class="sm:w-6/12 md:w-4/12 lg:w-3/12 pt-[30px] lg:pt-0">
                             <div class="flex flex-col">
                                 <div class="flex items-center gap-2.5 sm:gap-3">
                                     <img class="w-[40px] sm:w-[45px]" src="./assets/images/webp/Ai_img.webp"
@@ -3348,7 +3350,7 @@
                                 alt="dotted_line">
 
                             <div class="mb-6 absolute top-0 start-0 flex gap-[15px] sm:gap-[20px]">
-                                <img class="w-[50px] h-[50px] sm:w-[60px] sm:h-[60px]"
+                                <img class="w-[50px] h-[50px] sm:w-[60px] sm:h-[60px] img1"
                                     src="./assets/images/webp/interview_img.webp" alt="interview_img.webp">
                                 <div class="flex flex-col gap-2.5">
                                     <button
@@ -3634,19 +3636,23 @@
         var swiper = new Swiper(".swipper1", {
             spaceBetween: 10,
             centeredSlides: false,
-            slidesPerView: 2,
+            slidesPerView: 2.8,
             Infinity: true,
+            loop: true,
             autoplay: {
-                delay: 2500,
+                delay: 3000,
                 disableOnInteraction: false,
             },
-            pagination: {
-                el: ".swiper-pagination",
-                clickable: true,
-            },
-            navigation: {
-                nextEl: ".swiper-button-next",
-                prevEl: ".swiper-button-prev",
+
+            breakpoints: {
+
+                992: {
+                    slidesPerView: 3,
+                },
+
+                576: {
+                    slidesPerView: 2,
+                },
             },
         });
 
