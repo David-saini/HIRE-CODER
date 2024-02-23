@@ -169,11 +169,10 @@ function togglePlayPause(videoId) {
     var button = document.querySelector("#" + videoId + "+ .playPauseBtn");
     if (video.paused || video.ended) {
         video.play();
-        button.textContent = "Pause";
     } else {
         video.pause();
-        button.textContent = "Play";
     }
+    button.style.display = video.paused || video.ended ? "block" : "none";
 }
 
 
