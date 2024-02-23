@@ -143,3 +143,9 @@ html {
         }
     }
 }
+
+@media (min-width:1919px) {
+    .meet_top_coder {
+        padding-top: 0 !important;
+    }
+}
