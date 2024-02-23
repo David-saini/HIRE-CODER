@@ -2170,9 +2170,62 @@
                     <div class="lg:w-7/12">
                         <div class="flex flex-col">
                             <div class="relative">
-                                <img class="w-full mb-4 !max-w-[659px]" src="./assets/images/webp/Courtney_Henry.webp"
-                                    alt="Courtney_Henry">
-                                <img class="absolute top-[50%] left-[50%] translate-y-[-50%] translate-x-[-50%] w-[33px] sm:w-[45px] md:w-[56px]"
+                                <!-- <img class="w-full mb-4 !max-w-[659px]" src="./assets/images/webp/Courtney_Henry.webp"
+                                    alt="Courtney_Henry"> -->
+
+
+
+
+                                <div id="video1" width="659" height="370"
+                                    class="video_content active w-full mb-4 !max-w-[659px]">
+                                    <video id="videoPlayer1" poster="./assets/images/webp/Ralph_Edwards_big.webp">
+                                        <source src="./assets/video/video1.mp4" type="video/mp4">
+                                    </video>
+
+                                </div>
+
+                                <div id="video2" class="video_content active w-full mb-4 !max-w-[659px]">
+                                    <video id="videoPlayer1" poster="./assets/images/webp/Cody_Fisher_big.webp">
+                                        <source src="./assets/video/video1.mp4" type="video/mp4">
+                                    </video>
+                                </div>
+
+                                <div id="video3" class="video_content active w-full mb-4 !max-w-[659px]">
+                                    <video id="videoPlayer1" poster="./assets/images/webp/Arlene_McCoy_big.webp">
+                                        <source src="./assets/video/video1.mp4" type="video/mp4">
+                                    </video>
+                                </div>
+
+                                <div id="video4" class="video_content active w-full mb-4 !max-w-[659px]">
+                                    <video id="videoPlayer1" poster="./assets/images/webp/Esther_Howard_big.webp">
+                                        <source src="./assets/video/video1.mp4" type="video/mp4">
+                                    </video>
+                                </div>
+
+                                <div id="video5" class="video_content active w-full mb-4 !max-w-[659px]">
+                                    <video id="videoPlayer1" poster="./assets/images/webp/Ronald_Richards_big.webp">
+                                        <source src="./assets/video/video1.mp4" type="video/mp4">
+                                    </video>
+                                </div>
+
+                                <div id="video6" class="video_content active w-full mb-4 !max-w-[659px]">
+                                    <video id="videoPlayer1" poster="./assets/images/webp/Dianne_Russell_big.webp">
+                                        <source src="./assets/video/video1.mp4" type="video/mp4">
+                                    </video>
+                                </div>
+
+                                <div id="video7" class="video_content active w-full mb-4 !max-w-[659px]">
+                                    <video id="videoPlayer1" poster="./assets/images/webp/Courtney_Henry.webp">
+                                        <source src="./assets/video/video1.mp4" type="video/mp4">
+                                    </video>
+                                </div>
+
+
+
+
+
+                                <img class="absolute top-[50%] left-[50%] translate-y-[-50%] translate-x-[-50%] w-[33px] sm:w-[45px] md:w-[56px] playPauseBtn"
+                                    onclick="togglePlayPause('videoPlayer1')"
                                     src="./assets/images/webp/videoplayer.webp" alt="videoplayer">
                             </div>
                             <h3 class="ff_inter font-semibold text-lg sm:text-xl leading-[130%] text-black1">Courtney
@@ -2448,9 +2501,9 @@
                 <div class="mt-[50px]">
                     <div class="flex items-center developers_slider">
 
-                        <div class="flex flex-col items-center justify-center">
-                            <a href="#"><img class="max-w-[163px] mx-auto sm:max-w-[182px]"
-                                    src="./assets/images/webp/Ralph_Edwards1.webp" alt="Ralph_Edwards1"></a>
+                        <div class="flex flex-col items-center justify-center video_btn" onclick="openTab('video1')">
+                            <img class="max-w-[163px] mx-auto sm:max-w-[182px]"
+                                src="./assets/images/webp/Ralph_Edwards1.webp" alt="Ralph_Edwards1">
                             <h5
                                 class="ff_inter font-semibold text-sm sm:text-md leading-[130%] text-center mt-2.5 sm:mt-3 !text-black1">
                                 Ralph Edwards
@@ -2460,9 +2513,9 @@
                                 Java Developer</p>
                         </div>
 
-                        <div class="flex flex-col items-center justify-center">
-                            <a href="#"><img class="max-w-[163px] mx-auto sm:max-w-[182px]"
-                                    src="./assets/images/webp/Cody_Fisher.webp" alt="Cody Fisher"></a>
+                        <div class="flex flex-col items-center justify-center video_btn" onclick="openTab('video2')">
+                            <img class="max-w-[163px] mx-auto sm:max-w-[182px]"
+                                src="./assets/images/webp/Cody_Fisher.webp" alt="Cody Fisher">
                             <h5
                                 class="ff_inter font-semibold text-sm sm:text-md leading-[130%] text-center mt-2.5 sm:mt-3 !text-black1">
                                 Cody Fisher</h5>
@@ -2471,9 +2524,9 @@
                                 Java Developer</p>
                         </div>
 
-                        <div class="flex flex-col items-center justify-center">
-                            <a href="#"><img class="max-w-[163px] mx-auto sm:max-w-[182px]"
-                                    src="./assets/images/webp/Arlene_McCoy.webp" alt="Arlene McCoy"></a>
+                        <div class="flex flex-col items-center justify-center video_btn" onclick="openTab('video3')">
+                            <img class="max-w-[163px] mx-auto sm:max-w-[182px]"
+                                src="./assets/images/webp/Arlene_McCoy.webp" alt="Arlene McCoy">
                             <h5
                                 class="ff_inter font-semibold text-sm sm:text-md leading-[130%] text-center mt-2.5 sm:mt-3 !text-black1">
                                 Arlene McCoy</h5>
@@ -2482,9 +2535,9 @@
                                 Java Developer</p>
                         </div>
 
-                        <div class="flex flex-col items-center justify-center">
-                            <a href="#"><img class="max-w-[163px] mx-auto sm:max-w-[182px]"
-                                    src="./assets/images/webp/Esther_Howard.webp" alt="Esther Howard"></a>
+                        <div class="flex flex-col items-center justify-center video_btn" onclick="openTab('video4')">
+                            <img class="max-w-[163px] mx-auto sm:max-w-[182px]"
+                                src="./assets/images/webp/Esther_Howard.webp" alt="Esther Howard">
                             <h5
                                 class="ff_inter font-semibold text-sm sm:text-md leading-[130%] text-center mt-2.5 sm:mt-3 !text-black1">
                                 Esther Howard</h5>
@@ -2493,9 +2546,9 @@
                                 Java Developer</p>
                         </div>
 
-                        <div class="flex flex-col items-center justify-center">
-                            <a href="#"><img class="max-w-[163px] mx-auto sm:max-w-[182px]"
-                                    src="./assets/images/webp/Ronald_Richards.webp" alt="Ronald Richards"></a>
+                        <div class="flex flex-col items-center justify-center video_btn" onclick="openTab('video5')">
+                            <img class="max-w-[163px] mx-auto sm:max-w-[182px]"
+                                src="./assets/images/webp/Ronald_Richards.webp" alt="Ronald Richards">
                             <h5
                                 class="ff_inter font-semibold text-sm sm:text-md leading-[130%] text-center mt-2.5 sm:mt-3 !text-black1">
                                 Ronald Richards</h5>
@@ -2504,9 +2557,9 @@
                                 Java Developer</p>
                         </div>
 
-                        <div class="flex flex-col items-center justify-center">
-                            <a href="#"><img class="max-w-[163px] mx-auto sm:max-w-[182px]"
-                                    src="./assets/images/webp/Dianne_Russell.webp" alt="Dianne_Russell"></a>
+                        <div class="flex flex-col items-center justify-center video_btn" onclick="openTab('video6')">
+                            <img class="max-w-[163px] mx-auto sm:max-w-[182px]"
+                                src="./assets/images/webp/Dianne_Russell.webp" alt="Dianne_Russell">
                             <h5
                                 class="ff_inter font-semibold text-sm sm:text-md leading-[130%] text-center mt-2.5 sm:mt-3 !text-black1">
                                 Dianne Russell</h5>
@@ -2515,13 +2568,13 @@
                                 Java Developer</p>
                         </div>
 
-                        <div class="flex flex-col items-center justify-center sm:block hidden">
-                            <a href="#"><img class="max-w-[163px] mx-auto sm:max-w-[182px]"
-                                    src="./assets/images/webp/Ralph_Edwards1.webp" alt="Ralph_Edwards1"></a>
+                        <div class="flex flex-col items-center justify-center sm:block hidden video_btn"
+                            onclick="openTab('video7')">
+                            <img class="max-w-[163px] mx-auto sm:max-w-[182px]"
+                                src="./assets/images/webp/Courtney_Henry_small.webp" alt="Courtney_Henry_small">
                             <h5
                                 class="ff_inter font-semibold text-sm sm:text-md leading-[130%] text-center mt-2.5 sm:mt-3 !text-black1">
-                                Ralph
-                                Edwards
+                                Courtney Henry
                             </h5>
                             <p
                                 class="ff_inter font-normal mt-1 sm:mt-2 text-xs sm:text-sm leading-[150%] text-black1 opacity-60 text-center">
