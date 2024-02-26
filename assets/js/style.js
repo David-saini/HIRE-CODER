@@ -142,40 +142,38 @@ toggleBtn.addEventListener("click", function () {
         content.style.display = "block";
         toggleBtn.textContent = "Show Less";
     } else {
-        // If visible, hide the content
         content.style.display = "none";
         toggleBtn.textContent = "Show More...";
     }
 });
 
 // video play function
-function openTab(tabName) {
-    var i, tabcontent, tablinks;
-    tabcontent = document.getElementsByClassName("video_content");
-    for (i = 0; i < tabcontent.length; i++) {
-        tabcontent[i].style.display = "none";
-    }
-    document.getElementById(tabName).style.display = "block";
-    var videos = document.querySelectorAll("video");
-    for (i = 0; i < videos.length; i++) {
-        if (videos[i].id !== "videoPlayer" + tabName.charAt(tabName.length - 1)) {
-            videos[i].pause();
-        }
-    }
-}
+// function openTab(tabName) {
+//     var i, tabcontent, tablinks;
+//     tabcontent = document.getElementsByClassName("video_content");
+//     for (i = 0; i < tabcontent.length; i++) {
+//         tabcontent[i].style.display = "none";
+//     }
+//     document.getElementById(tabName).style.display = "block";
+//     var videos = document.querySelectorAll("video");
+//     for (i = 0; i < videos.length; i++) {
+//         if (videos[i].id !== "videoPlayer" + tabName.charAt(tabName.length - 1)) {
+//             videos[i].pause();
+//         }
+//     }
+// }
 
-function togglePlayPause(videoId) {
-    var video = document.getElementById(videoId);
-    var button = document.querySelector("#" + videoId + "+ .playPauseBtn");
-    if (video.paused || video.ended) {
-        video.play();
-    } else {
-        video.pause();
-    }
-    button.style.display = video.paused || video.ended ? "block" : "none";
-}
+// function togglePlayPause(videoId) {
+//     var video = document.getElementById(videoId);
+//     var button = document.querySelector("#" + videoId + "+ .playPauseBtn");
+//     if (video.paused || video.ended) {
+//         video.play();
+//     } else {
+//         video.pause();
+//     }
+//     button.style.display = video.paused || video.ended ? "block" : "none";
+// }
+// document.addEventListener("DOMContentLoaded", function () {
+//     openTab("video1");
+// });
 
-
-document.addEventListener("DOMContentLoaded", function () {
-    openTab("video1");
-});

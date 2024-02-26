@@ -149,3 +149,11 @@ html {
         padding-top: 0 !important;
     }
 }
+
+.video_content {
+    display: none;
+}
+
+.active {
+    display: block;
+}
